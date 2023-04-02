@@ -2,8 +2,8 @@
 <html>
 <head>
   <title>DJ Requests</title>
-  <meta name="description" content="DJ requester">
-  <meta name="author" content="Arvid & André">
+  <meta name="description" content="Song Request">
+  <meta name="author" content="Fuse Radio">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -18,7 +18,7 @@
   <meta name="application-name" content="DJ Requests">
   <meta name="msapplication-TileColor" content="#ffc40d">
   <meta name="msapplication-config" content="./favicon/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#4a4a4a">
 
   <!-- BOOSTRAP 4 -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -127,14 +127,6 @@ You can clone or fork this project on <a href="http://github.com/andrewisen/dj-r
 </div>
 </div>
 
-  <footer class="footer">
-    <div class="container">
-      <span class="text-muted">
-      &copy; <script>new Date().getFullYear()>document.write(new Date().getFullYear());</script> <a href="https://awide.se" target="_blank">Arvid</a> & <a href="https://andrewisen.se" target="_blank">André</a> - 
-      <a href="#" data-toggle="modal" data-target="#aboutModal">About</a>
-      </span>
-    </div>
-  </footer>
 
   <!-- CDNs -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -148,7 +140,7 @@ You can clone or fork this project on <a href="http://github.com/andrewisen/dj-r
   function checkStatus(){
     var status =  window.location.search.substr(1);
     if (status == "requestSent") {
-      document.getElementById("parseResponse").innerHTML = 'Thank you for your <a style="font-size:80%;color:#e83e8c;word-break:break-word;text-decoration:none;" href="#requestSongModal" data-toggle="modal" data-target="#requestSongModal">request</a>.<br><br>The DJ(s) will do his, her, or their best to play your favorite song.';
+      document.getElementById("parseResponse").innerHTML = 'Thank you for your <a style="font-size:80%;color:#e83e8c;word-break:break-word;text-decoration:none;" href="#requestSongModal" data-toggle="modal" data-target="#requestSongModal">request</a>.<br><br>The DJ(s) will do their best to play your requested song.';
     }
 
     if (status == "easterEgg") {
